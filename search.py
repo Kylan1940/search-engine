@@ -1,7 +1,7 @@
 import os,sys,time
 
 # SEARCH MENU
-search = input("What do you want to search? \n1) Google \n2) Yahoo \n3) Youtube \n4) Twitter \n5) Facebook \n6) Stackoverflow \n7) Github \n8) Tokopedia \n9) Shopee (ID/PH/MY/SG/TH/VN/TW) \nChoose : ")
+search = input("What do you want to search? \n1) Google \n2) Yahoo \n3) Youtube \n4) Twitter \n5) Facebook \n6) Stackoverflow \n7) Github \n8) Tokopedia \n9) Shopee (ID/PH/MY/SG/TH/VN/TW) \n10) ID News \nChoose : ")
 
 # GOOGLE SEARCH
 if (search == "1"):
@@ -109,5 +109,46 @@ elif (search == "9"):
     else:
         print("Please select 1/2/3/4/5/6/7 !")
         
+# ID NEWS SEARCH
+elif (search == "10"):
+        os.system("clear")
+        idnews = input("1) Kompas.com \n2) CnnIndonesia \n3) Liputan6 \n4) Bola.com \n5) Suara \nChoose : ")
+        
+        if (idnews == "1"):
+            os.system("clear")
+            kompasnews = input("Search : ")
+            kompasnews = kompasnews.replace(" ","+")
+            print("Here is your link : https://search.kompas.com/search/?q=" + kompasnews)
+            
+        elif (idnews == "2"):
+            os.system("clear")
+            cnnnews = input("Search : ")
+            cnnnews = cnnnews.replace(" ","+")
+            print("Here is your link : https://www.cnnindonesia.com/search?query=" + cnnnews)
+            
+        elif (idnews == "3"):
+            os.system("clear")
+            liputannews = input("Search : ")
+            liputannews = liputannews.replace(" ","+")
+            print("Here is your link : https://www.liputan6.com/search?q=" + liputannews)
+            
+        elif (idnews == "4"):
+            os.system("clear")
+            bolanews = input("Search : ")
+            bolanews = bolanews.replace(" ","+")
+            print("Here is your link : https://www.bola.com/search?q=" + bolanews)
+            
+        elif (idnews == "5"):
+            os.system("clear")
+            suaranews = input("Search : ")
+            suaranews = suaranews.replace(" ","+")
+            print("Here is your link : https://www.suara.com/search?q=" + suaranews)
+            
+        else:
+            print("Please select 1/2/3/4/5 !")
+            
+# 
+        
+# ELSE
 else:
     print("Please select 1/2/3/4/5/6/7/8/9 !")

@@ -8,6 +8,7 @@
 7. Github
 8. Tokopedia
 9. Shopee
+10. ID News
 
 # How to run?
 ```
